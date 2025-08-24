@@ -7,7 +7,7 @@ gen weight = runiform()*2
 gen y = rnormal(100,15)
 
 * Declare survey design
-svyset cluster [pw=weight], strata(strata)
+svyset [pw=weight], psu(cluster) strata(strata) 
 
 * Estimate mean with survey design
 svy: mean y
