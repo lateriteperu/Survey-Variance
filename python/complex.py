@@ -1,5 +1,7 @@
 import numpy as np
 import statsmodels.api as sm
+from clarite.survey import SurveyDesignSpec
+
 
 # Simulated data
 n = 200
